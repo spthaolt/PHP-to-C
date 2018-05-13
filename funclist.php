@@ -1,5 +1,5 @@
 <?php
-	require 'functions.php';
+	require_once 'functions.php';
 	if(!empty($_SERVER['DOCUMENT_ROOT']))
 		header('Content-Type: text/plain');
 	$files = array('tokenflow.php', 'convert.php', 'tokenizer.php');

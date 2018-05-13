@@ -1,4 +1,5 @@
 <?php
+define('T_ML_COMMENT', 352);
 	class Tokenizer
 	{
 		var $tokens = array();

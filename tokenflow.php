@@ -1,5 +1,5 @@
 <?php
-	class Generator
+	class MyGenerator
 	{
 		var $functions = array('main');
 		var $curfunction = 0;
@@ -16,14 +16,14 @@
 		var $classes = array();
 		var $curclass = 0;
 		var $foreach = 0;
-		var $defines = array();
+//		var $defines = array();
 		var $objects = array();
 		var $inswitch = 0;
 		var $switchstate = array();
 		var $switched = array();
 		var $libs = array();
 		var $globals = array();
-		function Generator($tokenizer)
+		function __construct($tokenizer)
 		{
 			global $funcs;
 			$this->code = array('main' => array());

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <stdio.h>
+#include <cstdlib>
 #define PHP_NULL 0
 #define PHP_STRING 1
 #define PHP_INT 2

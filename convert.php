@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 
 function showUsage()
@@ -59,7 +59,7 @@ if($debug == true) {
 	$tokenizer = new Tokenizer();
 	$tokenizer->Parse($input);
 	$tokenizer->Strip();
-	$gen = new Generator($tokenizer);
+	$gen = new MyGenerator($tokenizer);
 	list($code, $flags) = $gen->Convert();
 	if(DEBUG)
 		$flags .= ' -g';
